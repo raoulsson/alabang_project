@@ -14,6 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface Level : NSObject
 
 - (NSArray<GameCharacter *> *)allGameCharacters;
+- (void)addCharacter:(GameCharacter *)gameCharacter;
 
 @end
 

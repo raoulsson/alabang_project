@@ -14,8 +14,12 @@ if the file target membership is set to "Project" as default, change it to "Publ
 
 To use Swift code in Objective-C, import a magical header file: <project-name>/<project-name>-Swift.h> into the implementation .m file
 
+That file name is defined in: alabang_project, select target alabang_project, build settings, then under: Swift Compiler General: Objective-C Generated Interface Header Name.
+
 And forward declare the Class in the, this time, .h file the classes used, here:
 
     @class GameCharacter;
 
+Also, the swift class fields, to be usable in Objective-C, have to be prepended (annotated?) with @objc:
 
+        @objc public let name: String;

@@ -10,7 +10,7 @@ import Foundation
 // only public can be seen outside of lib
 public class GameCharacter {
     
-    public let name: String;
+    @objc public let name: String;
     
     public init(name: String) {
         self.name = name

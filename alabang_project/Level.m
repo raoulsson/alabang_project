@@ -8,17 +8,27 @@
 #import "Level.h"
 #import <alabang_project/alabang_project-Swift.h>
 
+@interface Level ()
+
+@property (nonatomic, strong) NSMutableArray<GameCharacter *> *gameCharaters;
+
+@end
 @implementation Level
 
 - (instancetype)init {
     if(self = [super init]) {
+        self.gameCharaters = [NSMutableArray new];
         NSLog(@"The Level is initialized");
     }
     return self;
 }
 
+- (void)addCharacter:(GameCharacter *)gameCharacter {
+    [self.gameCharaters addObject: gameCharacter];
+}
+
 - (NSArray<GameCharacter *> *)allGameCharacters {
-    return nil;
+    return self.gameCharaters;
 }
 
 @end

@@ -9,7 +9,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@class GameCharacter;
+
 @interface Level : NSObject
+
+- (NSArray<GameCharacter *> *)allGameCharacters;
 
 @end
 

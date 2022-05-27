@@ -6,6 +6,7 @@
 //
 
 #import "Level.h"
+#import <alabang_project/alabang_project-Swift.h>
 
 @implementation Level
 
@@ -14,6 +15,10 @@
         NSLog(@"The Level is initialized");
     }
     return self;
+}
+
+- (NSArray<GameCharacter *> *)allGameCharacters {
+    return nil;
 }
 
 @end

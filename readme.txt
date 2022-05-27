@@ -12,6 +12,10 @@ Include of non-modular header inside framework module 'alabang_project': '/Users
 
 if the file target membership is set to "Project" as default, change it to "Public".
 
+To use Swift code in Objective-C, import a magical header file: <project-name>/<project-name>-Swift.h> into the implementation .m file
 
+And forward declare the Class in the, this time, .h file the classes used, here:
+
+    @class GameCharacter;
 
 

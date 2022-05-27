@@ -11,6 +11,8 @@ import alabang_project
 struct ContentView: View {
     let gameCharacter = GameCharacter(name: "AlaBangNam")
     
+    let level = Level()
+    
     var body: some View {
         Text("Hello, world...! " + gameCharacter.name)
             .padding()

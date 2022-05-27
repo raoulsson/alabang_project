@@ -15,6 +15,9 @@
 		9383AA762840DC8400BF5516 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9383AA752840DC8400BF5516 /* Preview Assets.xcassets */; };
 		9383AA7B2840DD9200BF5516 /* alabang_project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9383AA592840D59300BF5516 /* alabang_project.framework */; };
 		9383AA7C2840DD9200BF5516 /* alabang_project.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9383AA592840D59300BF5516 /* alabang_project.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9383AA812840E01D00BF5516 /* readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9383AA802840E01D00BF5516 /* readme.txt */; };
+		9383AA862840E0DA00BF5516 /* Level.h in Headers */ = {isa = PBXBuildFile; fileRef = 9383AA842840E0DA00BF5516 /* Level.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9383AA872840E0DA00BF5516 /* Level.m in Sources */ = {isa = PBXBuildFile; fileRef = 9383AA852840E0DA00BF5516 /* Level.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +53,9 @@
 		9383AA702840DC8100BF5516 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9383AA722840DC8400BF5516 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9383AA752840DC8400BF5516 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9383AA802840E01D00BF5516 /* readme.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
+		9383AA842840E0DA00BF5516 /* Level.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Level.h; sourceTree = "<group>"; };
+		9383AA852840E0DA00BF5516 /* Level.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Level.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +80,7 @@
 		9383AA4F2840D59300BF5516 = {
 			isa = PBXGroup;
 			children = (
+				9383AA802840E01D00BF5516 /* readme.txt */,
 				9383AA5B2840D59300BF5516 /* alabang_project */,
 				9383AA6D2840DC8100BF5516 /* GameLibClient */,
 				9383AA5A2840D59300BF5516 /* Products */,
@@ -95,6 +102,8 @@
 			children = (
 				9383AA5C2840D59300BF5516 /* alabang_project.h */,
 				9383AA632840D7C700BF5516 /* GameCharacter.swift */,
+				9383AA842840E0DA00BF5516 /* Level.h */,
+				9383AA852840E0DA00BF5516 /* Level.m */,
 			);
 			path = alabang_project;
 			sourceTree = "<group>";
@@ -133,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9383AA5D2840D59300BF5516 /* alabang_project.h in Headers */,
+				9383AA862840E0DA00BF5516 /* Level.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,6 +229,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9383AA812840E01D00BF5516 /* readme.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,6 +249,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9383AA872840E0DA00BF5516 /* Level.m in Sources */,
 				9383AA642840D7C700BF5516 /* GameCharacter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

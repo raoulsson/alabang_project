@@ -15,4 +15,8 @@ public class GameCharacter {
     public init(name: String) {
         self.name = name
     }
+    
+    public func say(text: String) {
+        print("hello " + text)
+    }
 }

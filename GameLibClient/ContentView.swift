@@ -8,13 +8,35 @@
 import SwiftUI
 import alabang_project
 
-struct ContentView: View {
-    let gameCharacter = GameCharacter(name: "AlaBangNam")
+class SomeClass {
     
     let level = Level()
     
+    func generateSomeData() -> SomeClass {
+        let gameCharacter = GameCharacter(name: "AlaBangNam")
+        
+        level.add(gameCharacter)
+        level.add(GameCharacter(name: "Jingo"))
+        
+        let characters = level.allGameCharacters()
+    
+        for character in characters {
+            print((character as! GameCharacter).name)
+        }
+        return self
+    }
+    
+    func getOneName() -> String {
+        return level.getOneCharacter().name
+    }
+}
+
+struct ContentView: View {
+    
+    let someClass = SomeClass()
+    
     var body: some View {
-        Text("Hello, world...! " + gameCharacter.name)
+        Text("Hello, world...! " + someClass.generateSomeData().getOneName())
             .padding()
     }
 }

@@ -13,6 +13,7 @@
 @property (nonatomic, strong) NSMutableArray<GameCharacter *> *gameCharaters;
 
 @end
+
 @implementation Level
 
 - (instancetype)init {
@@ -24,11 +25,15 @@
 }
 
 - (void)addCharacter:(GameCharacter *)gameCharacter {
-    [self.gameCharaters addObject: gameCharacter];
+    [self.gameCharaters addObject:gameCharacter];
 }
 
-- (NSArray<GameCharacter *> *)allGameCharacters {
+- (NSMutableArray<GameCharacter *> *)allGameCharacters {
     return self.gameCharaters;
+}
+
+- (GameCharacter *)getOneCharacter {
+    return _gameCharaters[0];
 }
 
 @end

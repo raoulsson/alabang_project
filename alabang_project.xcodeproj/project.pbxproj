@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9318732528425F1600DBF5A2 /* dmcp.h in Headers */ = {isa = PBXBuildFile; fileRef = 9318732428425F1600DBF5A2 /* dmcp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		931873282842612A00DBF5A2 /* ff_ifc.h in Headers */ = {isa = PBXBuildFile; fileRef = 9318732628425F8500DBF5A2 /* ff_ifc.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		931873292842613400DBF5A2 /* lft_ifc.h in Headers */ = {isa = PBXBuildFile; fileRef = 9318732728425FC600DBF5A2 /* lft_ifc.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9383AA5D2840D59300BF5516 /* alabang_project.h in Headers */ = {isa = PBXBuildFile; fileRef = 9383AA5C2840D59300BF5516 /* alabang_project.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9383AA642840D7C700BF5516 /* GameCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9383AA632840D7C700BF5516 /* GameCharacter.swift */; };
 		9383AA6F2840DC8100BF5516 /* GameLibClientApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9383AA6E2840DC8100BF5516 /* GameLibClientApp.swift */; };
@@ -45,6 +48,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9318732428425F1600DBF5A2 /* dmcp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dmcp.h; sourceTree = "<group>"; };
+		9318732628425F8500DBF5A2 /* ff_ifc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ff_ifc.h; sourceTree = "<group>"; };
+		9318732728425FC600DBF5A2 /* lft_ifc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lft_ifc.h; sourceTree = "<group>"; };
 		9383AA592840D59300BF5516 /* alabang_project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = alabang_project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9383AA5C2840D59300BF5516 /* alabang_project.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = alabang_project.h; sourceTree = "<group>"; };
 		9383AA632840D7C700BF5516 /* GameCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCharacter.swift; sourceTree = "<group>"; };
@@ -104,6 +110,9 @@
 				9383AA632840D7C700BF5516 /* GameCharacter.swift */,
 				9383AA842840E0DA00BF5516 /* Level.h */,
 				9383AA852840E0DA00BF5516 /* Level.m */,
+				9318732428425F1600DBF5A2 /* dmcp.h */,
+				9318732628425F8500DBF5A2 /* ff_ifc.h */,
+				9318732728425FC600DBF5A2 /* lft_ifc.h */,
 			);
 			path = alabang_project;
 			sourceTree = "<group>";
@@ -142,7 +151,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9383AA5D2840D59300BF5516 /* alabang_project.h in Headers */,
+				9318732528425F1600DBF5A2 /* dmcp.h in Headers */,
 				9383AA862840E0DA00BF5516 /* Level.h in Headers */,
+				931873282842612A00DBF5A2 /* ff_ifc.h in Headers */,
+				931873292842613400DBF5A2 /* lft_ifc.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

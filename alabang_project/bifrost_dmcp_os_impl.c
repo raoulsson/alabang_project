@@ -23,9 +23,6 @@
 // Declare swift and bridge
 // protos for function, it matches @_cdecl("swift_inc_x")
 intptr_t swift_inc_x(intptr_t);
-intptr_t bridge_inc_x(intptr_t x) {
-    return swift_inc_x(x);
-}
 
 // Forward declare example function
 void *inc_x(void *x_void_ptr);

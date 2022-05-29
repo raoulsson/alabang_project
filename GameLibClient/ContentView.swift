@@ -23,17 +23,24 @@ class SomeClass {
         for character in characters {
             print((character as! GameCharacter).name)
         }
+
         return self
     }
     
     func getOneName() -> String {
         return level.getOneCharacter().name
     }
+    
 }
 
 struct ContentView: View {
     
     let someClass = SomeClass()
+    
+    init() {
+        let bridge = DMCPSwiftBridge()
+        bridge.startKeyListenerInLib()
+    }
     
     var body: some View {
         Text("Hello, world...! " + someClass.generateSomeData().getOneName())

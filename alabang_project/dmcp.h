@@ -89,10 +89,12 @@ typedef unsigned int uint;
 # define LCD_SET_VALUE   0xFF
 #endif
 
+// New Raoul, later "listen->key" loop
+int C_ThreadLoop(void);
 
 
 // HW interface
-void LCD_clear();
+void LCD_clear(void);
 void LCD_power_on();
 void LCD_power_off(int clear);
 void LCD_write_line(uint8_t * buf);

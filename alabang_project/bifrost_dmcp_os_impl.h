@@ -10,6 +10,4 @@
 
 #include <stdio.h>
 
-int C_ThreadLoop(void);
-
 #endif /* bifrost_dmcp_os_impl_h */

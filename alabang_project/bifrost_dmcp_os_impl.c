@@ -20,30 +20,22 @@
 //#pragma ide diagnostic ignored "UnusedParameter"
 //#pragma ide diagnostic ignored "ConstantFunctionResult"
 
-// protos for function, it may match @_cdecl("CallBackModule")
-intptr_t CallBackModule(intptr_t);
-
-intptr_t invoke_Swift_Callback(intptr_t x) {
-    long result = CallBackModule(x);
-    return result;
+// Declare swift and bridge
+// protos for function, it matches @_cdecl("swift_inc_x")
+intptr_t swift_inc_x(intptr_t);
+intptr_t bridge_inc_x(intptr_t x) {
+    return swift_inc_x(x);
 }
 
-void *inc_x(void *x_void_ptr)
-{
-    long *x_ptr = (long *)x_void_ptr;
-    while(*x_ptr < 10)
-    {
-        printf("C: %ld\n", *x_ptr);
-        *x_ptr = invoke_Swift_Callback( *x_ptr);
-        usleep(2000000);
-    }
-    
-    /* the function must return something - NULL will do */
-    return NULL;
-    
-}
+// Forward declare example function
+void *inc_x(void *x_void_ptr);
 
-int C_ThreadLoop(void) {
+// This function is called from swift on init. It now simulates stuff happening.
+// In the end, it has to trigger the event loop within the secret code of the dylib
+// that starts listening to key events.
+// I is important that the loop is stared somewhere in a thread, like here or in the
+// client lib.
+int c_start_client_lib_loop(void) {
     long x = 0;
     
     printf("started\n");
@@ -53,22 +45,32 @@ int C_ThreadLoop(void) {
     
     // create thread which executes inc_x(&x)
     if(pthread_create(&inc_x_thread, NULL, inc_x, &x)) {
-        
         fprintf(stderr, "Error creating thread\n");
         return 1;
-        
     }
     
     // wait for the thread to finish:
     if(pthread_join(inc_x_thread, NULL)) {
-        
         fprintf(stderr, "Error joining thread\n");
         return 2;
-        
     }
     return 0;
 }
 
+// Impl of demo function that itself calls swift code
+void *inc_x(void *x_void_ptr) {
+    long *x_ptr = (long *)x_void_ptr;
+    while(*x_ptr < 10) {
+        printf("C: %ld\n", *x_ptr);
+        *x_ptr = swift_inc_x( *x_ptr);
+        usleep(2000000);
+    }
+    
+    /* the function must return something - NULL will do */
+    return NULL;
+}
+
+// actual impl that forwards up to Swift
 
 void LCD_clear(void) {
     fprintf(stderr, "Not implemented: \"%s\"\n", "LCD_clear");

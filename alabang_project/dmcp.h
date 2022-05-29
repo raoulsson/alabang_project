@@ -90,8 +90,7 @@ typedef unsigned int uint;
 #endif
 
 // New Raoul, later "listen->key" loop
-int C_ThreadLoop(void);
-
+int c_start_client_lib_loop(void);
 
 // HW interface
 void LCD_clear(void);

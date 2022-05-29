@@ -19,14 +19,14 @@ public class DMCPSwiftBridge {
     
     public func startKeyListenerInLib() {
         print(self.message)
-        self.startCalculatorLibrary()
+        self.startup()
         self.runMyTimer()
     }
     
-    private func startCalculatorLibrary() {
+    private func startup() {
         // run on a separate queue so we can go on with UI on main thread.
         DispatchQueue.global(qos: .userInitiated).async {
-            C_ThreadLoop()
+            c_start_client_lib_loop()
             print("done")
         }
     }
@@ -46,10 +46,9 @@ public class DMCPSwiftBridge {
     
 }
 
-@_cdecl("CallBackModule")
-func swiftCallback(x: Int) -> Int {
+@_cdecl("swift_inc_x")
+func swift_inc_x(x: Int) -> Int {
     // swift process data...
     shared = "B: \(x)"
     return x + 2
-    
 }

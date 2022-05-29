@@ -52,3 +52,19 @@ func swift_inc_x(x: Int) -> Int {
     shared = "B: \(x)"
     return x + 2
 }
+
+@_cdecl("swift_LCD_clear")
+func swift_LCD_clear() {
+    print("swift_LCD_clear called in Swift")
+}
+
+@_cdecl("swift_LCD_power_on")
+func swift_LCD_power_on() {
+    print("swift_LCD_power_on called in Swift")
+}
+
+@_cdecl("swift_LCD_power_off")
+func swift_LCD_power_off(clear: Int) -> Int {
+    print("swift_LCD_power_off called in Swift. Arg: " + clear.description + ". Returning 108")
+    return 108;
+}

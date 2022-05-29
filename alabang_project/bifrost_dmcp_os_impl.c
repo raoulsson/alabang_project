@@ -20,11 +20,12 @@
 //#pragma ide diagnostic ignored "UnusedParameter"
 //#pragma ide diagnostic ignored "ConstantFunctionResult"
 
-// Declare swift and bridge
+// Declare swift bridges
 // protos for function, it matches @_cdecl("swift_inc_x")
+// For the rest, done before impl
 intptr_t swift_inc_x(intptr_t);
 
-// Forward declare example function
+// Forward declare example function, just as long as we need the artivicial example loop start
 void *inc_x(void *x_void_ptr);
 
 // This function is called from swift on init. It now simulates stuff happening.
@@ -60,6 +61,9 @@ void *inc_x(void *x_void_ptr) {
     while(*x_ptr < 10) {
         printf("C: %ld\n", *x_ptr);
         *x_ptr = swift_inc_x( *x_ptr);
+        LCD_clear();
+        LCD_power_on();
+        LCD_power_off(42);
         usleep(2000000);
     }
     
@@ -69,16 +73,26 @@ void *inc_x(void *x_void_ptr) {
 
 // actual impl that forwards up to Swift
 
+void swift_LCD_clear(void);
 void LCD_clear(void) {
-    fprintf(stderr, "Not implemented: \"%s\"\n", "LCD_clear");
+    //fprintf(stderr, "Not implemented: \"%s\"\n", "LCD_clear");
+    printf("LCD_clear called in c\n");
+    swift_LCD_clear();
 }
 
+void swift_LCD_power_on(void);
 void LCD_power_on(void) {
-    fprintf(stderr, "Not implemented: \"%s\"\n", "LCD_power_on");
+    //fprintf(stderr, "Not implemented: \"%s\"\n", "LCD_power_on");
+    printf("LCD_power_on called in c\n");
+    swift_LCD_power_on();
 }
 
+int swift_LCD_power_off(int clear);
 void LCD_power_off(int clear) {
-    fprintf(stderr, "Not implemented: \"%s\"\n", "LCD_power_off");
+    //fprintf(stderr, "Not implemented: \"%s\"\n", "LCD_power_off");
+    printf("LCD_power_off called in c\n");
+    int result = swift_LCD_power_off(clear);
+    printf("Got back result: %i", result);
 }
 
 void LCD_write_line(uint8_t * buf) {

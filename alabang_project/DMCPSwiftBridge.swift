@@ -68,3 +68,8 @@ func swift_LCD_power_off(clear: Int) -> Int {
     print("swift_LCD_power_off called in Swift. Arg: " + clear.description + ". Returning 108")
     return 108;
 }
+
+@_cdecl("swift_lcd_setLine")
+func swift_lcd_setLine(ds: Int, ln_nr: Int) {
+    print("swift_lcd_setLine called in Swift. ds: %i, ln_nr: %i", ds, ln_nr)
+}

@@ -64,6 +64,7 @@ void *inc_x(void *x_void_ptr) {
         LCD_clear();
         LCD_power_on();
         LCD_power_off(42);
+        lcd_setLine(t24, 5);
         usleep(2000000);
     }
     
@@ -76,6 +77,14 @@ void *inc_x(void *x_void_ptr) {
 void swift_LCD_clear(void);
 void LCD_clear(void) {
     //fprintf(stderr, "Not implemented: \"%s\"\n", "LCD_clear");
+    
+    uint32_t data[] = { 1, 2, 3, 4, 5 };
+    printf ("data     = %p\n", data);
+    printf ("&data    = %p\n", &data);
+    printf ("t24      = %p\n\n", &t24);
+    
+    printf ("&data[0] = %p\n\n", &data[0]);
+    
     printf("LCD_clear called in c\n");
     swift_LCD_clear();
 }
@@ -92,7 +101,7 @@ void LCD_power_off(int clear) {
     //fprintf(stderr, "Not implemented: \"%s\"\n", "LCD_power_off");
     printf("LCD_power_off called in c\n");
     int result = swift_LCD_power_off(clear);
-    printf("Got back result: %i", result);
+    printf("Got back result: %i\n", result);
 }
 
 void LCD_write_line(uint8_t * buf) {
@@ -190,8 +199,47 @@ void lcd_writeClr(disp_stat_t * ds) {
     fprintf(stderr, "Not implemented: \"%s\"\n", "lcd_writeClr");
 }
 
+// #define lcd_putsAt(ds, ln, str)   do { lcd_setLine(ds, ln); lcd_puts(ds,str); } while(0)
+// lcd_putsAt(t24, 4, "Hello World!");
+// lcd_setLine(ds, ln);
+// #define t24             (sdb.pds_t24)
+// #define sdb (*((sys_sdb_t*)0x10002000))
+/*
+ typedef struct {
+   volatile uint32_t calc_state;
+   FIL * ppgm_fp;
+   const char * key_to_alpha_table;
+
+   run_menu_item_fn_t * run_menu_item_app;
+   menu_line_str_fn_t * menu_line_str_app;
+
+   void_fn_t * after_fat_format;
+
+   get_flag_fn_t * get_flag_dmy;
+   set_flag_fn_t * set_flag_dmy;
+   get_flag_fn_t * is_flag_clk24;
+   set_flag_fn_t * set_flag_clk24;
+   get_flag_fn_t * is_beep_mute;
+   set_flag_fn_t * set_beep_mute;
+
+   disp_stat_t * pds_t20;
+   disp_stat_t * pds_t24;
+   disp_stat_t * pds_fReg;
+
+   uint32_t * timer2_counter;
+   uint32_t * timer3_counter;
+
+   void_fn_t * msc_end_cb;
+
+ } sys_sdb_t;
+ */
+int swift_lcd_setLine(int ds, int ln_nr);
 void lcd_setLine(disp_stat_t * ds, int ln_nr) {
-    fprintf(stderr, "Not implemented: \"%s\"\n", "lcd_setLine");
+
+
+    //fprintf(stderr, "Not implemented: \"%s\"\n", "lcd_setLine");
+    printf("lcd_setLine called in c\n");
+    swift_lcd_setLine(ds, ln_nr);
 }
 
 void lcd_setXY(disp_stat_t * ds, int x, int y) {

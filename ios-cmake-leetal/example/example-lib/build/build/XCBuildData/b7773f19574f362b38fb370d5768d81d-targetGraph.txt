@@ -1,0 +1,7 @@
+Target dependency graph (3 targets)
+ZERO_CHECK in example-ios, no dependencies
+example in example-ios, depends on:
+ZERO_CHECK in example-ios (explicit)
+ALL_BUILD in example-ios, depends on:
+ZERO_CHECK in example-ios (explicit)
+example in example-ios (explicit)

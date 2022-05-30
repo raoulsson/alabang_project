@@ -1,0 +1,62 @@
+BCSymbolMap Version: 2.0
+__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEC1INS_9nullptr_tEEEPKc
+__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEC2INS_9nullptr_tEEEPKc
+__ZNSt3__117__compressed_pairINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE5__repES5_EC1INS_18__default_init_tagESA_EEOT_OT0_
+__ZNSt3__117__compressed_pairINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE5__repES5_EC2INS_18__default_init_tagESA_EEOT_OT0_
+__ZNSt3__1L7forwardINS_18__default_init_tagEEEOT_RNS_16remove_referenceIS2_E4typeE
+__ZNSt3__122__compressed_pair_elemINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE5__repELi0ELb0EEC2ENS_18__default_init_tagE
+__ZNSt3__122__compressed_pair_elemINS_9allocatorIcEELi1ELb1EEC2ENS_18__default_init_tagE
+__ZNSt3__19allocatorIcEC2Ev
+__ZNSt3__116__non_trivial_ifILb1ENS_9allocatorIcEEEC2Ev
+Apple clang version 13.1.6 (clang-1316.0.21.2.5)
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.5.sdk
+iPhoneSimulator15.5.sdk
+/Users/raoul/dev/imnu-universe/3rd-party-tools/ios-cmake-leetal/example/example-lib/HelloWorld.cpp
+/Users/raoul/dev/imnu-universe/3rd-party-tools/ios-cmake-leetal/example/example-lib
+__non_trivial_if
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.5.sdk/usr/include/c++/v1/__memory/allocator.h
+allocator
+__compressed_pair_elem
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.5.sdk/usr/include/c++/v1/__memory/compressed_pair.h
+forward<std::__1::__default_init_tag>
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.5.sdk/usr/include/c++/v1/__utility/forward.h
+__compressed_pair<std::__1::__default_init_tag, std::__1::__default_init_tag>
+length
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.5.sdk/usr/include/c++/v1/__string
+basic_string<std::__1::nullptr_t>
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.5.sdk/usr/include/c++/v1/string
+helloWorld
+HelloWorld.cpp
+-[HelloWorldIOS getHelloWorld]
+__ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE5c_strEv
+___clang_call_terminate
+__ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE4dataEv
+__ZNSt3__1L12__to_addressIKcEEPT_S3_
+__ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE13__get_pointerEv
+__ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE9__is_longEv
+__ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE18__get_long_pointerEv
+__ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE19__get_short_pointerEv
+__ZNKSt3__117__compressed_pairINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE5__repES5_E5firstEv
+__ZNKSt3__122__compressed_pair_elemINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE5__repELi0ELb0EE5__getEv
+__ZNSt3__114pointer_traitsIPKcE10pointer_toERS1_
+__ZNSt3__1L9addressofIKcEEPT_RS2_
+_OBJC_CLASSLIST_REFERENCES_$_
+_OBJC_SELECTOR_REFERENCES_
+__OBJC_METACLASS_RO_$_HelloWorldIOS
+__OBJC_$_INSTANCE_METHODS_HelloWorldIOS
+__OBJC_CLASS_RO_$_HelloWorldIOS
+/Users/raoul/dev/imnu-universe/3rd-party-tools/ios-cmake-leetal/example/example-lib/HelloWorldIOS.mm
+addressof<const char>
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.5.sdk/usr/include/c++/v1/__memory/addressof.h
+pointer_to
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.5.sdk/usr/include/c++/v1/__memory/pointer_traits.h
+__get
+first
+__get_short_pointer
+__get_long_pointer
+__is_long
+__get_pointer
+__to_address<const char>
+data
+c_str
+HelloWorldIOS.mm

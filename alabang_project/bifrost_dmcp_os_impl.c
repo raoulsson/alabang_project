@@ -58,13 +58,13 @@ int c_start_client_lib_loop(void) {
 // Impl of demo function that itself calls swift code
 void *inc_x(void *x_void_ptr) {
     long *x_ptr = (long *)x_void_ptr;
-    while(*x_ptr < 10) {
+    while(*x_ptr < 2) {
         printf("C: %ld\n", *x_ptr);
         *x_ptr = swift_inc_x( *x_ptr);
         LCD_clear();
         LCD_power_on();
         LCD_power_off(42);
-        lcd_setLine(t24, 5);
+        //lcd_setLine(t24, 5);
         usleep(2000000);
     }
     

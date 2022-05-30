@@ -1,3 +1,13 @@
+to make dylib, follow leetal readme and run
+
+cd -> ios-cmake-leetal/example/example-lib/build
+rm -rf *
+cmake .. -G Xcode -DCMAKE_TOOLCHAIN_FILE=../../ios.toolchain.cmake -DPLATFORM=SIMULATORARM64
+and
+cmake --build . --config Debug
+
+======================================================
+
 from: https://www.youtube.com/watch?v=9Ynv8X9KcHc
 
 default access modifier in swift is internal, means not viewable outside of lib. Use public

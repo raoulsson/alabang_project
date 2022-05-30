@@ -1,0 +1,1065 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		093CE5FEE42C4399ACD5BE41 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 4A23B85C2083467586D64431 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				5A04BBED5E35CF99C52B7019 /* Generate CMakeFiles/ZERO_CHECK */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		7CD62B327C804659A7BAF425 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = CBBBE86F5CDC4660B6136006 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				B4DB1E7C6C976A94AACF2585 /* Generate CMakeFiles/ALL_BUILD */,
+			);
+			dependencies = (
+				B7827C798A4F41779449E363 /* PBXTargetDependency */,
+				26D84ADDF9114189B28D6975 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		B3CD3C230D4246B499BC7AEC /* RUN_TESTS */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 4AD36C411E4E4BDAB2A32524 /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */;
+			buildPhases = (
+				003C8D08B0008F35F218E126 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+			);
+			name = RUN_TESTS;
+			productName = RUN_TESTS;
+		};
+		FB67C7651C7143E8B5FD8CDD /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = F0EB211CDAA34F47B4B0E58F /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				93426DA6A4AC2C2AC9CE883C /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				5D58068A604B482383265072 /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		3FECC81600A449E8960C43D2 /* HelloWorld.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9003F8E4575C4C40A57F269D /* HelloWorld.cpp */; };
+		5955857396314FDC933D6F9A /* HelloWorldIOS.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9E802836FE8A485A823A06C6 /* HelloWorldIOS.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5B2FF1E25C944214B85C5E80 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F9BC402FDF3487ABA9DCE44 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7CD62B327C804659A7BAF425;
+			remoteInfo = ALL_BUILD;
+		};
+		9351A23834A345AE83828B6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F9BC402FDF3487ABA9DCE44 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B61964365734E97A9DE4AB3;
+			remoteInfo = example;
+		};
+		93B92524AC2E49DEA4D8380F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F9BC402FDF3487ABA9DCE44 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 093CE5FEE42C4399ACD5BE41;
+			remoteInfo = ZERO_CHECK;
+		};
+		C8D9C1E79191418DBB9D63C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F9BC402FDF3487ABA9DCE44 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 093CE5FEE42C4399ACD5BE41;
+			remoteInfo = ZERO_CHECK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4B58C0C25D1E43B78E780B66 /* HelloWorld.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = HelloWorld.hpp; sourceTree = SOURCE_ROOT; };
+		5FBC7FB526694C1DA2B0F03B /* Info.plist */ = {isa = PBXFileReference; explicitFileType = sourcecode.text.plist; fileEncoding = 4; lastKnownFileType = text.plist; name = Info.plist; path = build/CMakeFiles/example.dir/Info.plist; sourceTree = SOURCE_ROOT; };
+		67596A5643FF4B74B2975999 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		9003F8E4575C4C40A57F269D /* HelloWorld.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; path = HelloWorld.cpp; sourceTree = SOURCE_ROOT; };
+		9A0667D9ECEC48FBAFC6AB70 /* HelloWorldIOS.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = HelloWorldIOS.h; sourceTree = SOURCE_ROOT; };
+		9E802836FE8A485A823A06C6 /* HelloWorldIOS.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = HelloWorldIOS.mm; sourceTree = SOURCE_ROOT; };
+		C3154F4B450C493BB7D1896C /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		D2D42D477B4C4CA18F148C41 /* libexample.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = libexample.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D374B953769A465EA1A28D19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0693D3208D8A4EE69021CB66 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				4F90A13CCA8C42DCBBB2FC1D /* CMake Rules */,
+				67596A5643FF4B74B2975999 /* CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		08F317D15C9148F5B05E7015 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5FBC7FB526694C1DA2B0F03B /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		4CE74D370D48468795545421 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4F90A13CCA8C42DCBBB2FC1D /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		A37C7173E0C947E4859AC558 /* example */ = {
+			isa = PBXGroup;
+			children = (
+				F7CED1E45DAF4FC7BCE0294D /* Source Files */,
+				D70CE35DF94F40FB854A0D8C /* Header Files */,
+				08F317D15C9148F5B05E7015 /* Resources */,
+				C3154F4B450C493BB7D1896C /* CMakeLists.txt */,
+			);
+			name = example;
+			sourceTree = "<group>";
+		};
+		AE4DE8F19EEF44FFBB933931 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2D42D477B4C4CA18F148C41 /* libexample.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D70CE35DF94F40FB854A0D8C /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				4B58C0C25D1E43B78E780B66 /* HelloWorld.hpp */,
+				9A0667D9ECEC48FBAFC6AB70 /* HelloWorldIOS.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		E926B07B70B94E94BA66591E = {
+			isa = PBXGroup;
+			children = (
+				A37C7173E0C947E4859AC558 /* example */,
+				0693D3208D8A4EE69021CB66 /* ALL_BUILD */,
+				AE4DE8F19EEF44FFBB933931 /* Products */,
+				4CE74D370D48468795545421 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F7CED1E45DAF4FC7BCE0294D /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				9003F8E4575C4C40A57F269D /* HelloWorld.cpp */,
+				9E802836FE8A485A823A06C6 /* HelloWorldIOS.mm */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9B61964365734E97A9DE4AB3 /* example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD69301A8EC24EF0BBCEB406 /* Build configuration list for PBXNativeTarget "example" */;
+			buildPhases = (
+				EA68DAF0DFFC471DBB3146B6 /* Sources */,
+				D374B953769A465EA1A28D19 /* Frameworks */,
+				426E8ECE765E2B0D91D70E2B /* CMake PostBuild Rules */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				448C4172B7E0421689D99F76 /* PBXTargetDependency */,
+			);
+			name = example;
+			productName = example;
+			productReference = D2D42D477B4C4CA18F148C41 /* libexample.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9F9BC402FDF3487ABA9DCE44 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1340;
+			};
+			buildConfigurationList = 04FA42B043784C82AD6878AF /* Build configuration list for PBXProject "example-ios" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E926B07B70B94E94BA66591E;
+			projectDirPath = ../;
+			projectRoot = "";
+			targets = (
+				7CD62B327C804659A7BAF425 /* ALL_BUILD */,
+				B3CD3C230D4246B499BC7AEC /* RUN_TESTS */,
+				093CE5FEE42C4399ACD5BE41 /* ZERO_CHECK */,
+				9B61964365734E97A9DE4AB3 /* example */,
+				FB67C7651C7143E8B5FD8CDD /* install */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		003C8D08B0008F35F218E126 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/raoul/dev/imnu-universe/3rd-party-tools/ios-cmake-leetal/example/example-lib/build\n  /opt/homebrew/Cellar/cmake/3.23.1_1/bin/ctest --force-new-ctest-process -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/raoul/dev/imnu-universe/3rd-party-tools/ios-cmake-leetal/example/example-lib/build\n  /opt/homebrew/Cellar/cmake/3.23.1_1/bin/ctest --force-new-ctest-process -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/raoul/dev/imnu-universe/3rd-party-tools/ios-cmake-leetal/example/example-lib/build\n  /opt/homebrew/Cellar/cmake/3.23.1_1/bin/ctest --force-new-ctest-process -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/raoul/dev/imnu-universe/3rd-party-tools/ios-cmake-leetal/example/example-lib/build\n  /opt/homebrew/Cellar/cmake/3.23.1_1/bin/ctest --force-new-ctest-process -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		426E8ECE765E2B0D91D70E2B /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/raoul/dev/imnu-universe/3rd-party-tools/ios-cmake-leetal/example/example-lib/build\n  /opt/homebrew/Cellar/cmake/3.23.1_1/bin/cmake -E cmake_symlink_library /Users/raoul/dev/imnu-universe/3rd-party-tools/ios-cmake-leetal/example/example-lib/build/Debug${EFFECTIVE_PLATFORM_NAME}/libexample.dylib /Users/raoul/dev/imnu-universe/3rd-party-tools/ios-cmake-leetal/example/example-lib/build/Debug${EFFECTIVE_PLATFORM_NAME}/libexample.dylib /Users/raoul/dev/imnu-universe/3rd-party-tools/ios-cmake-leetal/example/example-lib/build/Debug${EFFECTIVE_PLATFORM_NAME}/libexample.dylib\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/raoul/dev/imnu-universe/3rd-party-tools/ios-cmake-leetal/example/example-lib/build\n  /opt/homebrew/Cellar/cmake/3.23.1_1/bin/cmake -E cmake_symlink_library /Users/raoul/dev/imnu-universe/3rd-party-tools/ios-cmake-leetal/example/example-lib/build/Release${EFFECTIVE_PLATFORM_NAME}/libexample.dylib /Users/raoul/dev/imnu-universe/3rd-party-tools/ios-cmake-leetal/example/example-lib/build/Release${EFFECTIVE_PLATFORM_NAME}/libexample.dylib /Users/raoul/dev/imnu-universe/3rd-party-tools/ios-cmake-leetal/example/example-lib/build/Release${EFFECTIVE_PLATFORM_NAME}/libexample.dylib\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/raoul/dev/imnu-universe/3rd-party-tools/ios-cmake-leetal/example/example-lib/build\n  /opt/homebrew/Cellar/cmake/3.23.1_1/bin/cmake -E cmake_symlink_library /Users/raoul/dev/imnu-universe/3rd-party-tools/ios-cmake-leetal/example/example-lib/build/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libexample.dylib /Users/raoul/dev/imnu-universe/3rd-party-tools/ios-cmake-leetal/example/example-lib/build/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libexample.dylib /Users/raoul/dev/imnu-universe/3rd-party-tools/ios-cmake-leetal/example/example-lib/build/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libexample.dylib\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/raoul/dev/imnu-universe/3rd-party-tools/ios-cmake-leetal/example/example-lib/build\n  /opt/homebrew/Cellar/cmake/3.23.1_1/bin/cmake -E cmake_symlink_library /Users/raoul/dev/imnu-universe/3rd-party-tools/ios-cmake-leetal/example/example-lib/build/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libexample.dylib /Users/raoul/dev/imnu-universe/3rd-party-tools/ios-cmake-leetal/example/example-lib/build/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libexample.dylib /Users/raoul/dev/imnu-universe/3rd-party-tools/ios-cmake-leetal/example/example-lib/build/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libexample.dylib\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5A04BBED5E35CF99C52B7019 /* Generate CMakeFiles/ZERO_CHECK */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ZERO_CHECK";
+			outputPaths = (
+				"/Users/raoul/dev/imnu-universe/3rd-party-tools/ios-cmake-leetal/example/example-lib/build/CMakeFiles/ZERO_CHECK",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/raoul/dev/imnu-universe/3rd-party-tools/ios-cmake-leetal/example/example-lib/build\n  make -f /Users/raoul/dev/imnu-universe/3rd-party-tools/ios-cmake-leetal/example/example-lib/build/CMakeScripts/ReRunCMake.make\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/raoul/dev/imnu-universe/3rd-party-tools/ios-cmake-leetal/example/example-lib/build\n  make -f /Users/raoul/dev/imnu-universe/3rd-party-tools/ios-cmake-leetal/example/example-lib/build/CMakeScripts/ReRunCMake.make\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/raoul/dev/imnu-universe/3rd-party-tools/ios-cmake-leetal/example/example-lib/build\n  make -f /Users/raoul/dev/imnu-universe/3rd-party-tools/ios-cmake-leetal/example/example-lib/build/CMakeScripts/ReRunCMake.make\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/raoul/dev/imnu-universe/3rd-party-tools/ios-cmake-leetal/example/example-lib/build\n  make -f /Users/raoul/dev/imnu-universe/3rd-party-tools/ios-cmake-leetal/example/example-lib/build/CMakeScripts/ReRunCMake.make\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		93426DA6A4AC2C2AC9CE883C /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/raoul/dev/imnu-universe/3rd-party-tools/ios-cmake-leetal/example/example-lib/build\n  /opt/homebrew/Cellar/cmake/3.23.1_1/bin/cmake -DBUILD_TYPE=$CONFIGURATION -DEFFECTIVE_PLATFORM_NAME=$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/raoul/dev/imnu-universe/3rd-party-tools/ios-cmake-leetal/example/example-lib/build\n  /opt/homebrew/Cellar/cmake/3.23.1_1/bin/cmake -DBUILD_TYPE=$CONFIGURATION -DEFFECTIVE_PLATFORM_NAME=$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/raoul/dev/imnu-universe/3rd-party-tools/ios-cmake-leetal/example/example-lib/build\n  /opt/homebrew/Cellar/cmake/3.23.1_1/bin/cmake -DBUILD_TYPE=$CONFIGURATION -DEFFECTIVE_PLATFORM_NAME=$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/raoul/dev/imnu-universe/3rd-party-tools/ios-cmake-leetal/example/example-lib/build\n  /opt/homebrew/Cellar/cmake/3.23.1_1/bin/cmake -DBUILD_TYPE=$CONFIGURATION -DEFFECTIVE_PLATFORM_NAME=$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B4DB1E7C6C976A94AACF2585 /* Generate CMakeFiles/ALL_BUILD */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ALL_BUILD";
+			outputPaths = (
+				"/Users/raoul/dev/imnu-universe/3rd-party-tools/ios-cmake-leetal/example/example-lib/build/CMakeFiles/ALL_BUILD",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/raoul/dev/imnu-universe/3rd-party-tools/ios-cmake-leetal/example/example-lib/build\n  echo Build\\ all\\ projects\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/raoul/dev/imnu-universe/3rd-party-tools/ios-cmake-leetal/example/example-lib/build\n  echo Build\\ all\\ projects\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/raoul/dev/imnu-universe/3rd-party-tools/ios-cmake-leetal/example/example-lib/build\n  echo Build\\ all\\ projects\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/raoul/dev/imnu-universe/3rd-party-tools/ios-cmake-leetal/example/example-lib/build\n  echo Build\\ all\\ projects\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EA68DAF0DFFC471DBB3146B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FECC81600A449E8960C43D2 /* HelloWorld.cpp in Sources */,
+				5955857396314FDC933D6F9A /* HelloWorldIOS.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		26D84ADDF9114189B28D6975 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9B61964365734E97A9DE4AB3 /* example */;
+			targetProxy = 9351A23834A345AE83828B6F /* PBXContainerItemProxy */;
+		};
+		448C4172B7E0421689D99F76 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 093CE5FEE42C4399ACD5BE41 /* ZERO_CHECK */;
+			targetProxy = C8D9C1E79191418DBB9D63C5 /* PBXContainerItemProxy */;
+		};
+		5D58068A604B482383265072 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7CD62B327C804659A7BAF425 /* ALL_BUILD */;
+			targetProxy = 5B2FF1E25C944214B85C5E80 /* PBXContainerItemProxy */;
+		};
+		B7827C798A4F41779449E363 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 093CE5FEE42C4399ACD5BE41 /* ZERO_CHECK */;
+			targetProxy = 93B92524AC2E49DEA4D8380F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0AAAF135B86844A9AFD6B53E /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					example_EXPORTS,
+					IS_BUILDING_SHARED,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/raoul/dev/imnu-universe/3rd-party-tools/ios-cmake-leetal/example/example-lib",
+					"$(inherited)",
+				);
+				INSTALL_PATH = "@rpath";
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"-fPIC",
+				);
+				OTHER_LDFLAGS = (
+					"-rpath",
+					"@executable_path/Frameworks",
+					"-rpath",
+					"@loader_path/Frameworks",
+					"-dynamiclib",
+					"-Wl,-headerpad_max_install_names",
+					"$(inherited)",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = example;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/raoul/dev/imnu-universe/3rd-party-tools/ios-cmake-leetal/example/example-lib/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+		0C4D5BF110E2459B90853119 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					example_EXPORTS,
+					IS_BUILDING_SHARED,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/raoul/dev/imnu-universe/3rd-party-tools/ios-cmake-leetal/example/example-lib",
+					"$(inherited)",
+				);
+				INSTALL_PATH = "@rpath";
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"-fPIC",
+				);
+				OTHER_LDFLAGS = (
+					"-rpath",
+					"@executable_path/Frameworks",
+					"-rpath",
+					"@loader_path/Frameworks",
+					"-dynamiclib",
+					"-Wl,-headerpad_max_install_names",
+					"$(inherited)",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = example;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/raoul/dev/imnu-universe/3rd-party-tools/ios-cmake-leetal/example/example-lib/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		25C050372E4842B3AC94E06A /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					example_EXPORTS,
+					IS_BUILDING_SHARED,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/raoul/dev/imnu-universe/3rd-party-tools/ios-cmake-leetal/example/example-lib",
+					"$(inherited)",
+				);
+				INSTALL_PATH = "@rpath";
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"-fPIC",
+				);
+				OTHER_LDFLAGS = (
+					"-rpath",
+					"@executable_path/Frameworks",
+					"-rpath",
+					"@loader_path/Frameworks",
+					"-dynamiclib",
+					"-Wl,-headerpad_max_install_names",
+					"$(inherited)",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = example;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/raoul/dev/imnu-universe/3rd-party-tools/ios-cmake-leetal/example/example-lib/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+		26A866EC6DC447EFA9EB3507 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/raoul/dev/imnu-universe/3rd-party-tools/ios-cmake-leetal/example/example-lib/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+		3F70738A2836458BBDE145C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				"ARCHS[sdk=iphonesimulator*]" = arm64;
+				BITCODE_GENERATION_MODE = bitcode;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_IDENTITY = "Apple Development: raoul schmidiger (738R46X9RH)";
+				ENABLE_BITCODE = YES;
+				EXCLUDED_ARCHS = "";
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.5.sdk;
+				SYMROOT = "/Users/raoul/dev/imnu-universe/3rd-party-tools/ios-cmake-leetal/example/example-lib/build/build";
+				"VALID_ARCHS[sdk=iphonesimulator*]" = arm64;
+			};
+			name = Debug;
+		};
+		4140034EBCF544D4A73FF44B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				"ARCHS[sdk=iphonesimulator*]" = arm64;
+				BITCODE_GENERATION_MODE = bitcode;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_IDENTITY = "Apple Development: raoul schmidiger (738R46X9RH)";
+				ENABLE_BITCODE = YES;
+				EXCLUDED_ARCHS = "";
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.5.sdk;
+				SYMROOT = "/Users/raoul/dev/imnu-universe/3rd-party-tools/ios-cmake-leetal/example/example-lib/build/build";
+				"VALID_ARCHS[sdk=iphonesimulator*]" = arm64;
+			};
+			name = Release;
+		};
+		46950C2D4AF6471AB7EACE99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/raoul/dev/imnu-universe/3rd-party-tools/ios-cmake-leetal/example/example-lib/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		6519A918093F46BC84D34A57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/raoul/dev/imnu-universe/3rd-party-tools/ios-cmake-leetal/example/example-lib/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		67C85BFBE1594D2681924D90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/raoul/dev/imnu-universe/3rd-party-tools/ios-cmake-leetal/example/example-lib/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		67F174D2BCCF4442825C937C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/raoul/dev/imnu-universe/3rd-party-tools/ios-cmake-leetal/example/example-lib/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		800332661DBF4487AF380EC4 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/raoul/dev/imnu-universe/3rd-party-tools/ios-cmake-leetal/example/example-lib/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+		87E340B2EDE442B0A26A6E03 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/raoul/dev/imnu-universe/3rd-party-tools/ios-cmake-leetal/example/example-lib/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+		891B554A23C84929A3DB89FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					example_EXPORTS,
+					IS_BUILDING_SHARED,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/raoul/dev/imnu-universe/3rd-party-tools/ios-cmake-leetal/example/example-lib",
+					"$(inherited)",
+				);
+				INSTALL_PATH = "@rpath";
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "   -fPIC ";
+				OTHER_LDFLAGS = (
+					"-rpath",
+					"@executable_path/Frameworks",
+					"-rpath",
+					"@loader_path/Frameworks",
+					"-dynamiclib",
+					"-Wl,-headerpad_max_install_names",
+					"$(inherited)",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = example;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/raoul/dev/imnu-universe/3rd-party-tools/ios-cmake-leetal/example/example-lib/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		8E7070E709314911B41743C6 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/raoul/dev/imnu-universe/3rd-party-tools/ios-cmake-leetal/example/example-lib/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+		93C59F40D2EF4660A3BFCB99 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				"ARCHS[sdk=iphonesimulator*]" = arm64;
+				BITCODE_GENERATION_MODE = bitcode;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_IDENTITY = "Apple Development: raoul schmidiger (738R46X9RH)";
+				ENABLE_BITCODE = YES;
+				EXCLUDED_ARCHS = "";
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.5.sdk;
+				SYMROOT = "/Users/raoul/dev/imnu-universe/3rd-party-tools/ios-cmake-leetal/example/example-lib/build/build";
+				"VALID_ARCHS[sdk=iphonesimulator*]" = arm64;
+			};
+			name = RelWithDebInfo;
+		};
+		98D966FC000443A39F25C227 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/raoul/dev/imnu-universe/3rd-party-tools/ios-cmake-leetal/example/example-lib/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+		CCAE5578E8A34261925C64EB /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/raoul/dev/imnu-universe/3rd-party-tools/ios-cmake-leetal/example/example-lib/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+		CD6E8AD18FDB4150817C07C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/raoul/dev/imnu-universe/3rd-party-tools/ios-cmake-leetal/example/example-lib/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		D757C40935B04A76BA766A88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/raoul/dev/imnu-universe/3rd-party-tools/ios-cmake-leetal/example/example-lib/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		E447BBA6AD434CCDAE17D66B /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/raoul/dev/imnu-universe/3rd-party-tools/ios-cmake-leetal/example/example-lib/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+		E536D369BEE444F381959E5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/raoul/dev/imnu-universe/3rd-party-tools/ios-cmake-leetal/example/example-lib/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		F2B1A03B86BF4DC2BDACB0BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/raoul/dev/imnu-universe/3rd-party-tools/ios-cmake-leetal/example/example-lib/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		FA16A66FA2FC4A58A8D838EE /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/raoul/dev/imnu-universe/3rd-party-tools/ios-cmake-leetal/example/example-lib/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+		FB4B944646734344B45240C3 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				"ARCHS[sdk=iphonesimulator*]" = arm64;
+				BITCODE_GENERATION_MODE = bitcode;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_IDENTITY = "Apple Development: raoul schmidiger (738R46X9RH)";
+				ENABLE_BITCODE = YES;
+				EXCLUDED_ARCHS = "";
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.5.sdk;
+				SYMROOT = "/Users/raoul/dev/imnu-universe/3rd-party-tools/ios-cmake-leetal/example/example-lib/build/build";
+				"VALID_ARCHS[sdk=iphonesimulator*]" = arm64;
+			};
+			name = MinSizeRel;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04FA42B043784C82AD6878AF /* Build configuration list for PBXProject "example-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F70738A2836458BBDE145C0 /* Debug */,
+				4140034EBCF544D4A73FF44B /* Release */,
+				FB4B944646734344B45240C3 /* MinSizeRel */,
+				93C59F40D2EF4660A3BFCB99 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		4A23B85C2083467586D64431 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67F174D2BCCF4442825C937C /* Debug */,
+				6519A918093F46BC84D34A57 /* Release */,
+				8E7070E709314911B41743C6 /* MinSizeRel */,
+				CCAE5578E8A34261925C64EB /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		4AD36C411E4E4BDAB2A32524 /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD6E8AD18FDB4150817C07C8 /* Debug */,
+				F2B1A03B86BF4DC2BDACB0BC /* Release */,
+				800332661DBF4487AF380EC4 /* MinSizeRel */,
+				87E340B2EDE442B0A26A6E03 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		CBBBE86F5CDC4660B6136006 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D757C40935B04A76BA766A88 /* Debug */,
+				67C85BFBE1594D2681924D90 /* Release */,
+				E447BBA6AD434CCDAE17D66B /* MinSizeRel */,
+				26A866EC6DC447EFA9EB3507 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		CD69301A8EC24EF0BBCEB406 /* Build configuration list for PBXNativeTarget "example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				891B554A23C84929A3DB89FE /* Debug */,
+				0C4D5BF110E2459B90853119 /* Release */,
+				25C050372E4842B3AC94E06A /* MinSizeRel */,
+				0AAAF135B86844A9AFD6B53E /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F0EB211CDAA34F47B4B0E58F /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E536D369BEE444F381959E5D /* Debug */,
+				46950C2D4AF6471AB7EACE99 /* Release */,
+				FA16A66FA2FC4A58A8D838EE /* MinSizeRel */,
+				98D966FC000443A39F25C227 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9F9BC402FDF3487ABA9DCE44 /* Project object */;
+}

@@ -17,6 +17,7 @@ public class GameCharacter {
     }
     
     public func say(text: String) {
-        print("hello " + text)
+        let libExample = HelloWorldIOS()
+        print("hello " + text + " " + libExample.getHelloWorld())
     }
 }

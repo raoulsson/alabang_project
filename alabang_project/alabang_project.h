@@ -18,3 +18,4 @@ FOUNDATION_EXPORT const unsigned char alabang_projectVersionString[];
 #import <alabang_project/dmcp.h>
 #import <alabang_project/ff_ifc.h>
 #import <alabang_project/lft_ifc.h>
+#import <alabang_project/HelloWorldIOS.h>

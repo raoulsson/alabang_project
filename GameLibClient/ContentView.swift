@@ -21,7 +21,7 @@ class SomeClass {
         let characters = level.allGameCharacters()
     
         for character in characters {
-            print((character as! GameCharacter).name)
+            print((character as! GameCharacter).say(text: "xyz"))
         }
 
         return self

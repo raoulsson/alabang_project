@@ -33,3 +33,5 @@ And forward declare the Class in the, this time, .h file the classes used, here:
 Also, the swift class fields, to be usable in Objective-C, have to be prepended (annotated?) with @objc:
 
         @objc public let name: String;
+        
+
